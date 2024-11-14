@@ -18,7 +18,7 @@ class Shop {
         System.out.println("  \\__,_||_.__/ |_| |_||_||_| |_| \\__,_|  \\_/       \\__, | \\___||_| |_| \\___||_|   \\__,_||_|     |___/ \\__|\\___/ |_|   \\___|");
         System.out.println("                                                    __/ |                                                                 ");
         System.out.println("                                                   |___/                                                                  ");
-        
+        System.out.println("\n source code available here - https://github.com/MONUMISHRA-XD/ism-patna/blob/main/ism_shop.java");
         while (true) {
             System.out.println("\n1. BUY GROCERY");
             System.out.println("2. HELP DESK");
