@@ -17,26 +17,39 @@ def create_list():
           enter 1 for find sum of even index
           enter 2 for find sum of odd index
            enter 3 for find avg of list 
+          enter 4 for find the difference between sum of even and odd
           enter any key for exit😷""")
     choose = int(input("enter the option : "))
 
     def sum_odd_index():
-           print(sum(listt[::2]))
+           global odd_sum
+           odd_sum = sum(listt[1::2])
+           print(odd_sum)
     def sum_even_index():
-           print(sum(listt[1::2]))
+           global even_sum 
+           even_sum = sum(listt[::2])
+           print(even_sum)
     def avg_listt():
            avg = sum(listt)/len(listt)
            print(f"average is {avg} of this list ")
-
+    def difference_of_odd_and_sum():
+             odd_sum = sum(listt[1::2])
+             even_sum = sum(listt[::2])
+             if odd_sum>even_sum:
+                    print(odd_sum-even_sum)
+             else:
+                    print(even_sum-odd_sum)   
     if choose==1:
-           sum_even_index()
+              sum_even_index()
     elif choose==2:
-           sum_odd_index()
+              sum_odd_index()
     elif choose==3:
-           avg_listt()
+              avg_listt()
+    elif choose==4:
+            difference_of_odd_and_sum()
     else:
-           print("you entered wrong option (:  )")
-           exit()
-
+              print("you entered wrong option (:  )")
+              exit()
+      
     
 create_list()
