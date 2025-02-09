@@ -26,7 +26,6 @@ Welcome to my coding journey! This repository contains **college projects**, **D
 | **Project 2** | Brief overview | Java, Swing | In Progress 🚧 |
 | **JARVIS AI** | AI-powered virtual assistant | Python, NLP, APIs | Active Development 🔥 |
 
-*(Add more projects with details)*
 
 ### Project Showcase
 ```python
@@ -56,16 +55,15 @@ def welcome_jarvis():
 - College schedule integration 📅
 
 ### Tech Stack
-``` 
+
 🛠️ Python | SpeechRecognition | OpenAI API | PyAutoGUI | SQLite
-```
+
 
 ### Current Progress
 - Basic voice command recognition implemented
 - Working on integrating WhatsApp automation
 - Planning to add facial recognition
 
----
 
 ## 🤝 Contribute
 
@@ -77,13 +75,11 @@ def welcome_jarvis():
 **Suggestions Welcome!**  
 Have ideas for JARVIS features? Open an [issue](https://github.com/MONUMISHRA-XD/ism-patna/issues)!
 
----
 
 ## 📜 License
 
 This project is licensed under [MIT License](LICENSE) - free to use, modify, and distribute.
 
----
 
 ⭐ **Star this repo** if you find it useful!  
 🔔 **Stay tuned** for daily DSA updates and JARVIS development progress!
