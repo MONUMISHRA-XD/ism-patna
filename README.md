@@ -89,5 +89,5 @@ This project is licensed under [MIT License](LICENSE) - free to use, modify, and
 🔔 **Stay tuned** for daily DSA updates and JARVIS development progress!
 
 Connect with me:  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-profile/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhinav-ism)
 [![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=flat&logo=LeetCode&logoColor=black)](https://leetcode.com/your-profile/)
