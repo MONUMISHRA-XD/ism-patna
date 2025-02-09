@@ -1,9 +1,10 @@
 import speech_recognition as sr #for listen and understand the word
 import pyttsx3 #for text to speak
-import pvporcupine 
+import pvporcupine #jarvis awake
 import pyaudio
 import struct
 import requests
+import os
 
 my_pico_voice_key = "g5uJHfVm3/fO04QAWVb40LVIsAWoF/PUG2kdCbbOTlyS4Q5IWqsNWA=="
 
@@ -93,18 +94,47 @@ def get_news(country="in", category="technology"):
 # search_news("Python")
 
     
+def close_app(process_name):
+    os.system(f"taskkill /f /im {process_name}")
 
 def main():
     detect_wake_word()
     speak("hello,how can i help you?")
+    sites = [["youtube","https://youtube.com"],["wikipedia","https://www.wikipedia.com"],["google","https://www.google.com"]]
+    for site in sites:
+        if f"open{site[0]}".lower() in query.lower():
+            speak("opening {site[0]} sir")
     while True:
         query = listen()
         if "hello" in query:
             speak("hii there")
+        
+        elif "kAise Ho".lower() in query.lower():
+            speak("mai thik hu")
+        
+
+        elif "faVourite song".lower() in query.lower():
+                speak("your favourite song playing sir..")
+                musicpath = r"C:\Users\91746\Music\Saudebaazi.mp3"
+                os.startfile(musicpath)
+
+
+        elif "stop song".lower() in query.lower():
+                process_name = "vlc.exe"
+                close_app(process_name)
+                speak("song stoped sir")
+
+        elif "close browser".lower() in query.lower():
+            process_name = "msedge.exe"
+            close_app(process_name)
+            speak("broswer closed sir")   
+        elif "open visual studeio".lower() in query.lower():
+            pass
         elif "time" in query:
             import datetime
-            now =datetime.datetime.now().strftime("%H:%M")
-            speak(f"the time is {now}")
+            hour =datetime.datetime.now().strftime("%H")
+            minuts =datetime.datetime.now().strftime("%M")
+            speak(f"sir time is {hour} hours and  {minuts} minutes ")
         elif "tech news" in  query:
             get_news()
         elif "exit" in query:
