@@ -1,7 +1,7 @@
 # 🏛️ ISM Patna - Projects & DSA Solutions 🚀
 
 ![Banner](https://user-images.githubusercontent.com/78718063/178163067-5d0e3b6a-3c4e-4a1d-9c46-3d8a4cff4c90.gif)  
-*(Add your own banner image URL above)*
+*(https://image-static.collegedunia.com/public/college_data/images/campusimage/1501926580dewrrdjh.JPG)*
 
 Welcome to my coding journey! This repository contains **college projects**, **DSA problem solutions**, and ongoing work on **JARVIS AI**. I regularly upload code snippets and projects to document my learning progress.
 
